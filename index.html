@@ -60,6 +60,92 @@
   <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"
     onerror="loadCssFromCDN('font-awesome.css')">
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    .wedding-name {
+      font-family: 'Aleo', serif;
+      /* font-family: 'Palatino', serif !important; */
+      font-weight: 300 !important;
+    }
+
+    .wedding-name::before {
+      content: none !important;
+    }
+
+    /* Events grid and cards styles */
+    .events-grid {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    
+    .event-col {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 30px;
+    }
+    
+    .event-block {
+      width: 100%;
+      padding: 35px 28px !important;
+      border-radius: 16px !important;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04) !important;
+      -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+      border: 1px solid rgba(0, 0, 0, 0.02) !important;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+    
+    .event-block:hover {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+    }
+    
+    .event-block h4 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 16px !important;
+    }
+    
+    .event-details {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    
+    .event-details i {
+      margin-right: 8px;
+      width: 18px;
+      text-align: center;
+    }
+    
+    .event-description {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #666;
+      margin-top: auto;
+      margin-bottom: 0;
+      border-top: 1px dashed rgba(0,0,0,0.08);
+      padding-top: 16px;
+    }
+  </style>
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
@@ -88,9 +174,9 @@
               </ul>
             </nav>
           </div>
-          <div class="navicon">
+          <!-- <div class="navicon">
             <a class="nav-toggle" href="#"><span></span></a>
-          </div>
+          </div> -->
         </div>
       </header>
     </section>
@@ -98,19 +184,19 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
           <div class="hero-content text-center">
-            <!--<h1>Venkat Sai and Durga Devi</h1>-->
-            <img src="img/logo-lg.png">
+            <h1 class="wedding-name">Venkat Sai &#x1F49E; Durga Devi</h1>
+            <!-- <img src="img/logo-lg.png"> -->
             <!--<p class="intro">Venkat Sai & Durga Devi are getting hitched!</p>-->
             <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
           </div>
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-sm-4 hidden-xs"></div>
         <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a>
         </div>
         <div class="col-sm-4 hidden-xs"></div>
-      </div>
+      </div> -->
     </div>
     <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
   </section>
@@ -163,26 +249,40 @@
           <h3 class="header">Events</h3>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <div class="event-block"
-            style="margin-bottom:32px; padding:24px; background:#faf9f6; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-            <h4 style="margin-bottom:8px; color:#b48a78;">23rd June – Haldi</h4>
-            <ul style="list-style:none; padding-left:0; margin-bottom:0;">
-              <li><strong>Groom:</strong> Mancherial</li>
-            </ul>
+      <div class="row events-grid">
+        <!-- Haldi Card -->
+        <div class="col-md-4 event-col">
+          <div class="event-block" style="background:#faf9f6;">
+            <h4 style="color:#b48a78;">23rd June – Haldi</h4>
+            <div class="event-details">
+              <div><i class="fa fa-calendar-o" style="color:#b48a78;"></i> <strong>Tuesday</strong></div>
+              <div style="margin-top: 8px;"><i class="fa fa-map-marker" style="color:#b48a78;"></i> <strong>Groom:</strong> Mancherial</div>
+            </div>
+            <p class="event-description">The auspicious Haldi ceremony to kick off the wedding celebrations.</p>
           </div>
-          <div class="event-block"
-            style="margin-bottom:32px; padding:24px; background:#f6faff; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-            <h4 style="margin-bottom:8px; color:#7a9eb4;">24th June – Wedding</h4>
-            <div><i class="fa fa-clock-o"></i> <strong>8:00 PM</strong> at <strong>Tekulapalli</strong></div>
-            <p style="margin-top:8px;">Join us for the wedding ceremony of Venkat Sai & Durga Devi.</p>
+        </div>
+        <!-- Wedding Card -->
+        <div class="col-md-4 event-col">
+          <div class="event-block" style="background:#f6faff;">
+            <h4 style="color:#7a9eb4;">24th June – Wedding</h4>
+            <div class="event-details">
+              <div><i class="fa fa-calendar-o" style="color:#7a9eb4;"></i> <strong>Wednesday</strong></div>
+              <div style="margin-top: 8px;"><i class="fa fa-clock-o" style="color:#7a9eb4;"></i> <strong>8:00 PM</strong> onwards</div>
+              <div style="margin-top: 8px;"><i class="fa fa-map-marker" style="color:#7a9eb4;"></i> At <strong>Tekulapalli</strong></div>
+            </div>
+            <p class="event-description">Join us for the wedding ceremony of Venkat Sai & Durga Devi.</p>
           </div>
-          <div class="event-block"
-            style="padding:24px; background:#f9f6fa; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-            <h4 style="margin-bottom:8px; color:#b47ab4;">26th June – Reception</h4>
-            <div><i class="fa fa-clock-o"></i> <strong>12:00 PM onwards</strong> at <strong>Mancherial</strong></div>
-            <p style="margin-top:8px;">Celebrate with us and bless the couple at the reception.</p>
+        </div>
+        <!-- Reception Card -->
+        <div class="col-md-4 event-col">
+          <div class="event-block" style="background:#f9f6fa;">
+            <h4 style="color:#b47ab4;">26th June – Reception</h4>
+            <div class="event-details">
+              <div><i class="fa fa-calendar-o" style="color:#b47ab4;"></i> <strong>Friday</strong></div>
+              <div style="margin-top: 8px;"><i class="fa fa-clock-o" style="color:#b47ab4;"></i> <strong>12:00 PM</strong> onwards</div>
+              <div style="margin-top: 8px;"><i class="fa fa-map-marker" style="color:#b47ab4;"></i> At <strong>Mancherial</strong></div>
+            </div>
+            <p class="event-description">Celebrate with us and bless the couple at the reception.</p>
           </div>
         </div>
       </div>
@@ -361,7 +461,7 @@
         <h3>How do I get there?</h3>
         <p>It's way easier than you think!</p>
       </div>
-      <div id="map-canvas"></div>
+      <!-- <div id="map-canvas"></div> -->
       <div id="map-content-wrapper" class="container pointer-events-none">
         <div class="row">
           <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
