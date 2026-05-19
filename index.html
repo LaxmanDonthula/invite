@@ -81,7 +81,7 @@
       flex-wrap: wrap;
       margin-top: 30px;
     }
-    
+
     .event-col {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -89,18 +89,18 @@
       margin-bottom: 30px;
       width: 100%;
     }
-    
+
     @media (min-width: 992px) {
       .event-col {
         width: 33.33333333%;
       }
     }
-    
+
     .event-block {
       width: 100%;
       padding: 35px 28px !important;
       border-radius: 16px !important;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.04) !important;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
       -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
       transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
       border: 1px solid rgba(0, 0, 0, 0.02) !important;
@@ -115,20 +115,20 @@
       -ms-flex-pack: justify;
       justify-content: space-between;
     }
-    
+
     .event-block:hover {
       -webkit-transform: translateY(-8px);
       transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
     }
-    
+
     .event-block h4 {
       font-size: 22px;
       font-weight: 700;
       margin-top: 0;
       margin-bottom: 16px !important;
     }
-    
+
     .event-details {
       font-size: 15px;
       line-height: 1.6;
@@ -136,26 +136,200 @@
       margin-bottom: 20px;
       flex-grow: 1;
     }
-    
+
     .event-details i {
       margin-right: 8px;
       width: 18px;
       text-align: center;
     }
-    
+
     .event-description {
       font-size: 14px;
       line-height: 1.6;
       color: #666;
       margin-top: auto;
       margin-bottom: 0;
-      border-top: 1px dashed rgba(0,0,0,0.08);
+      border-top: 1px dashed rgba(0, 0, 0, 0.08);
       padding-top: 16px;
     }
 
-    #map-content-wrapper {
-      margin-top: 30px !important;
-      margin-bottom: 50px !important;
+    #map {
+      background: #f8f9fd !important;
+      padding: 80px 0 !important;
+    }
+
+    .directions-grid {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .direction-card-col {
+      margin-bottom: 30px;
+      display: flex;
+    }
+
+    .direction-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 40px 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .direction-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    }
+
+    .direction-card .icon-wrapper {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: #fef2f2;
+      color: #991b1b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 10px rgba(153, 27, 27, 0.1);
+    }
+
+    .direction-card.reception-card .icon-wrapper {
+      background: #f5f3ff;
+      color: #581c87;
+      box-shadow: 0 4px 10px rgba(88, 28, 135, 0.1);
+    }
+
+    .direction-card h4 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: #1e293b;
+    }
+
+    .direction-card h5 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #64748b;
+      margin-top: 0;
+      margin-bottom: 16px;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+
+    .direction-card p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #64748b;
+      margin-bottom: 30px;
+      flex-grow: 1;
+      padding-bottom: 0;
+    }
+
+    .direction-card .btn-navigate {
+      padding: 12px 30px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 30px;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      letter-spacing: 1px;
+    }
+
+    .direction-card.wedding-card .btn-navigate {
+      background: #991b1b;
+      color: #ffffff;
+    }
+
+    .direction-card.wedding-card .btn-navigate:hover {
+      background: #7f1d1d;
+      color: #ffffff;
+    }
+
+    .direction-card.reception-card .btn-navigate {
+      background: #581c87;
+      color: #ffffff;
+    }
+
+    .direction-card.reception-card .btn-navigate:hover {
+      background: #4c1d95;
+      color: #ffffff;
+    }
+
+    /* Contact Section in Directions */
+    .directions-contact {
+      margin-top: 20px;
+      padding: 35px 30px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .directions-contact h5 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 24px;
+      color: #334155;
+      letter-spacing: 1px;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 15px;
+      background: #f8f9fd;
+      padding: 10px 20px;
+      border-radius: 30px;
+      border: 1px solid rgba(0, 0, 0, 0.02);
+    }
+
+    .contact-item i {
+      font-size: 16px;
+      color: #cca21b;
+    }
+
+    .contact-item span {
+      font-weight: 500;
+      color: #64748b;
+    }
+
+    .contact-item a {
+      font-weight: 700;
+      color: #334155;
+    }
+
+    .contact-item a:hover {
+      color: #cca21b;
     }
 
     /* Theme Card Colors */
@@ -163,15 +337,19 @@
       background: #cca21b !important;
       color: #ffffff !important;
     }
+
     .card-haldi h4 {
       color: #ffffff !important;
     }
+
     .card-haldi .event-details {
       color: rgba(255, 255, 255, 0.95) !important;
     }
+
     .card-haldi .event-details i {
       color: #ffffff !important;
     }
+
     .card-haldi .event-description {
       color: rgba(255, 255, 255, 0.85) !important;
       border-top: 1px dashed rgba(255, 255, 255, 0.25) !important;
@@ -181,15 +359,19 @@
       background: #991b1b !important;
       color: #ffffff !important;
     }
+
     .card-wedding h4 {
       color: #ffffff !important;
     }
+
     .card-wedding .event-details {
       color: rgba(255, 255, 255, 0.95) !important;
     }
+
     .card-wedding .event-details i {
       color: #ffffff !important;
     }
+
     .card-wedding .event-description {
       color: rgba(255, 255, 255, 0.85) !important;
       border-top: 1px dashed rgba(255, 255, 255, 0.25) !important;
@@ -199,15 +381,19 @@
       background: #581c87 !important;
       color: #ffffff !important;
     }
+
     .card-reception h4 {
       color: #ffffff !important;
     }
+
     .card-reception .event-details {
       color: rgba(255, 255, 255, 0.95) !important;
     }
+
     .card-reception .event-details i {
       color: #ffffff !important;
     }
+
     .card-reception .event-description {
       color: rgba(255, 255, 255, 0.85) !important;
       border-top: 1px dashed rgba(255, 255, 255, 0.25) !important;
@@ -323,7 +509,7 @@
             <h4>23rd June – Haldi</h4>
             <div class="event-details">
               <div><i class="fa fa-calendar-o"></i> <strong>Tuesday</strong></div>
-              <div style="margin-top: 8px;"><i class="fa fa-map-marker"></i> <strong>Groom:</strong> Mancherial</div>
+              <div style="margin-top: 8px;"><i class="fa fa-map-marker"></i> <strong>Groom:</strong> CCC Naspur</div>
             </div>
             <p class="event-description">The auspicious Haldi ceremony to kick off the wedding celebrations.</p>
           </div>
@@ -524,50 +710,65 @@
   </section> -->
 
     <section id="map" class="section-padding">
-      <div class="text-center">
-        <h3>How do I get there?</h3>
-        <p>It's way easier than you think!</p>
-      </div>
-      <!-- <div id="map-canvas"></div> -->
-      <div id="map-content-wrapper" class="container pointer-events-none">
-        <div class="row">
-          <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-            <div class="text-center">
-              <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h3 class="header">How do I get there?</h3>
+            <p style="margin-bottom: 40px;">It's way easier than you think!</p>
+          </div>
+        </div>
+
+        <div class="row directions-grid">
+          <!-- Wedding Venue Card -->
+          <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 direction-card-col">
+            <div class="direction-card wedding-card">
+              <div class="icon-wrapper">
+                <i class="fa fa-map-marker"></i>
               </div>
+              <h4>Wedding Venue</h4>
+              <h5>Singareni Kalyana Mandapam</h5>
+              <p>Kothagudem, Tekulapalli, Telangana, India</p>
+              <a class="btn btn-navigate"
+                href="https://www.google.com/maps/place/Singareni+Kalyana+Mandapam/@17.5560714,80.4655855,19.87z/data=!4m6!3m5!1s0x3a3413488aa0802b:0xe0c1a703ab9a4059!8m2!3d17.5561635!4d80.4658071!16s%2Fg%2F11f11p31l2?entry=ttu&g_ep=EgoyMDI2MDUxMS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank">
+                <i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Navigate on Map
+              </a>
             </div>
-            <div id="map-content" class="pointer-events-auto">
-              <div class="row">
-                <div class="col-md-6">
-                  <h5>Singareni Kalyana Mandapam (Wedding)</h5>
-                  <p><a
-                      href="https://www.google.com/maps/place/Singareni+Kalyana+Mandapam/@17.5560714,80.4655855,19.87z/data=!4m6!3m5!1s0x3a3413488aa0802b:0xe0c1a703ab9a4059!8m2!3d17.5561635!4d80.4658071!16s%2Fg%2F11f11p31l2?entry=ttu&g_ep=EgoyMDI2MDUxMS4wIKXMDSoASAFQAw%3D%3D"
-                      target="_blank">Singareni Kalyana Mandapam, Kothagudem, Telangana, India</a></p>
-                  <h5>Mancherial (Reception)</h5>
-                  <p><a
-                      href="https://www.google.com/maps/place/Mancherial,+Telangana/@18.870977,79.436012,13z/data=!3m1!4b1!4m6!3m5!1s0x3a2a339b2e2e2e2f:0x6e8e8e8e8e8e8e8e!8m2!3d18.870977!4d79.436012!16zL20vMDJ4c3Zz"
-                      target="_blank">Reception Venue, Mancherial, Telangana, India</a></p>
-                </div>
-                <div class="col-md-6">
-                  <h5>Venkat Sai (babblu)</h5>
-                  <p><i class="fa fa-mobile"></i> <a href="tel://+919553281218">+91 9553281218</a></p>
-                  <h5>Rahul Sai (bunny)</h5>
-                  <p><i class="fa fa-mobile"></i> <a href="tel://+919542949299">+91 9542949299</a></p>
-                </div>
+          </div>
+
+          <!-- Reception Venue Card -->
+          <div class="col-xs-12 col-sm-6 col-md-5 direction-card-col">
+            <div class="direction-card reception-card">
+              <div class="icon-wrapper">
+                <i class="fa fa-map-marker"></i>
               </div>
-              <div class="row text-center">
-                <!--
-              <div class="col-md-6" style="padding: 5px;">
-                <a class="btn btn-fill btn-small"
-                  href="https://m.uber.com/ul/?action=setPickup&client_id=Yh7Dl6SjB56RY2JuuZF8ttVa6ryFV78W&pickup=my_location&dropoff[formatted_address]=Fortune%20Park%20Panchwati%20-%20Hotels%20in%20Kolkata%2C%20Howrah%2C%20West%20Bengal%2C%20India&dropoff[latitude]=22.593276&dropoff[longitude]=88.270277"><i
-                    class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-              </div>
-              -->
-                <div class="col-md-6" style="padding: 5px;">
-                  <a class="btn btn-accent btn-small" id="btn-show-map"
-                    href="https://www.google.com/maps/place/Singareni+Kalyana+Mandapam/@17.5560714,80.4655855,19.87z/data=!4m6!3m5!1s0x3a3413488aa0802b:0xe0c1a703ab9a4059!8m2!3d17.5561635!4d80.4658071!16s%2Fg%2F11f11p31l2?entry=ttu&g_ep=EgoyMDI2MDUxMS4wIKXMDSoASAFQAw%3D%3D"
-                    target="_blank"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show map</a>
+              <h4>Reception Venue</h4>
+              <h5>Chaitra Gardens and Function Hall</h5>
+              <p>CCC Naspur, Mancherial, Telangana, India</p>
+              <a class="btn btn-navigate"
+                href="https://www.google.com/maps/place/Chaitra+Gardens+and+Function+Hall/@18.8672321,79.4855558,19.39z/data=!4m6!3m5!1s0x3a32c9bd50275189:0xc327eb4c76da3089!8m2!3d18.8671086!4d79.4858395!16s%2Fg%2F11fkwbn2c4?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank">
+                <i class="fa fa-location-arrow"></i>&nbsp;&nbsp;Navigate on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Helpline -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="directions-contact">
+              <h5>Need help with directions or accommodation?</h5>
+              <div class="contact-links">
+                <div class="contact-item">
+                  <i class="fa fa-user"></i>
+                  <span>Venkat Sai (babblu):</span>
+                  <a href="tel:+919553281218">+91 9553281218</a>
+                </div>
+                <div class="contact-item">
+                  <i class="fa fa-user"></i>
+                  <span>Rahul Sai (bunny):</span>
+                  <a href="tel:+919542949299">+91 9542949299</a>
                 </div>
               </div>
             </div>
