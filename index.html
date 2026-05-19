@@ -87,6 +87,13 @@
       display: -ms-flexbox;
       display: flex;
       margin-bottom: 30px;
+      width: 100%;
+    }
+    
+    @media (min-width: 992px) {
+      .event-col {
+        width: 33.33333333%;
+      }
     }
     
     .event-block {
@@ -144,6 +151,11 @@
       margin-bottom: 0;
       border-top: 1px dashed rgba(0,0,0,0.08);
       padding-top: 16px;
+    }
+
+    #map-content-wrapper {
+      margin-top: 30px !important;
+      margin-bottom: 50px !important;
     }
   </style>
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -251,7 +263,7 @@
       </div>
       <div class="row events-grid">
         <!-- Haldi Card -->
-        <div class="col-md-4 event-col">
+        <div class="col-xs-12 col-sm-12 col-md-4 event-col">
           <div class="event-block" style="background:#faf9f6;">
             <h4 style="color:#b48a78;">23rd June – Haldi</h4>
             <div class="event-details">
@@ -262,7 +274,7 @@
           </div>
         </div>
         <!-- Wedding Card -->
-        <div class="col-md-4 event-col">
+        <div class="col-xs-12 col-sm-12 col-md-4 event-col">
           <div class="event-block" style="background:#f6faff;">
             <h4 style="color:#7a9eb4;">24th June – Wedding</h4>
             <div class="event-details">
@@ -274,7 +286,7 @@
           </div>
         </div>
         <!-- Reception Card -->
-        <div class="col-md-4 event-col">
+        <div class="col-xs-12 col-sm-12 col-md-4 event-col">
           <div class="event-block" style="background:#f9f6fa;">
             <h4 style="color:#b47ab4;">26th June – Reception</h4>
             <div class="event-details">
