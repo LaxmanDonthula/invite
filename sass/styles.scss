@@ -12,6 +12,22 @@
 /* ==========================================================================
 Global Styles
 ========================================================================== */
+
+@font-face {
+  font-family: 'Zenitha Classic';
+  src: url('./fonts/ZenithaClassic_PERSONAL_USE_ONLY.woff2') format('woff2'),
+       url('./fonts/ZenithaClassic_PERSONAL_USE_ONLY.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wedding-name {
+    font-family: 'Zenitha Classic', Georgia, serif;
+    font-weight: 300 !important;
+}
+.wedding-name::before {
+    content: none !important;
+}
 .group:after {
   content: "";
   display: table;
@@ -252,7 +268,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/hero-min.jpg') center center;
+  background: url('../img/landscape.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

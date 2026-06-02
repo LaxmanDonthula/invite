@@ -257,6 +257,10 @@
         padding-top: 100%;
     }
 
+    .hero {
+        background-position:  62% bottom !important;
+    }
+
     #eng-pics .img-wrap i {
         font-size: 25px;
         position: absolute;
