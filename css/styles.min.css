@@ -425,7 +425,7 @@ section .header {
     position: absolute;
     height: 26px;
     right: 10px;
-    top: 48px;
+    top: 46px;
     visibility: hidden;
     transition: all 300ms ease-in-out
 }
@@ -499,11 +499,12 @@ header a.login {
 }
 
 header .logo {
-    display: inline-block
+    display: inline-block;
+    vertical-align: middle
 }
 
 header .logo img {
-    height: 19px
+    height: 30px
 }
 
 header ul.primary-nav {
@@ -541,13 +542,14 @@ header ul.member-actions li a:hover {
 }
 
 header .header-nav {
-    display: inline-block
+    display: inline-block;
+    vertical-align: middle
 }
 
 header .member-actions {
     position: absolute;
     right: 0;
-    top: 41px;
+    top: 50px;
     transition: all 300ms ease-in-out
 }
 
