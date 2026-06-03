@@ -14,15 +14,14 @@ Global Styles
 ========================================================================== */
 
 @font-face {
-  font-family: 'Papyrus';
-  src: local('Papyrus'),
-       url('../fonts/papyrus.ttf') format('truetype');
+  font-family: 'WeddingPapyrus';
+  src: url('../fonts/papyrus.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 .wedding-name {
-    font-family: Papyrus;
+    font-family: 'WeddingPapyrus', Georgia, serif;
     font-weight: 800 !important;
     color: #ffffff !important;
     margin-top: 150px !important;
