@@ -114,6 +114,30 @@ section.blog {
     background: #f8f9fd
 }
 
+@font-face {
+    font-family: "Papyrus";
+    src: local("Papyrus"), url("../fonts/papyrus.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+.wedding-name {
+    font-family: Papyrus;
+    font-weight: 800 !important;
+    color: #fff !important;
+    margin-top: 150px !important
+}
+
+@media(min-width: 750px) {
+    .wedding-name {
+        margin-top: 250px
+    }
+}
+
+.wedding-name::before {
+    content: none !important
+}
+
 .group:after {
     content: "";
     display: table;
@@ -401,14 +425,14 @@ section .header {
     position: absolute;
     height: 26px;
     right: 10px;
-    top: 48px;
+    top: 46px;
     visibility: hidden;
     transition: all 300ms ease-in-out
 }
 
 .hero {
     min-height: 750px;
-    background: url("../img/landscape.jpg") center center;
+    background: url("../img/landscape.jpeg") center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -475,11 +499,12 @@ header a.login {
 }
 
 header .logo {
-    display: inline-block
+    display: inline-block;
+    vertical-align: middle
 }
 
 header .logo img {
-    height: 50px
+    height: 30px
 }
 
 header ul.primary-nav {
@@ -517,13 +542,14 @@ header ul.member-actions li a:hover {
 }
 
 header .header-nav {
-    display: inline-block
+    display: inline-block;
+    vertical-align: middle
 }
 
 header .member-actions {
     position: absolute;
     right: 0;
-    top: 41px;
+    top: 50px;
     transition: all 300ms ease-in-out
 }
 
@@ -1086,47 +1112,4 @@ body.modal-open {
 
 .modal-body {
     padding: 25px
-}
-
-/* @font-face {
-    font-family: 'Zenitha Classic';
-    src: url('./fonts/ZenithaClassic_PERSONAL_USE_ONLY.woff2') format('woff2'),
-        url('./fonts/ZenithaClassic_PERSONAL_USE_ONLY.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-} */
-
-.wedding-name {
-    /* font-family: 'Aleo', serif; */
-    /* font-family: 'Palatino', serif !important; */
-    /* font-family: "Helvetica Neue", Arial, sans-serif; */
-    /* font-family: "Zenitha Classic"; */
-    /* font-family: 'Zenitha Classic', Georgia, serif; */
-    /* font-family: 'MyCustomFont', 'Roboto', sans-serif; */
-    /* font-family: Papyrus, fantasy; */
-    font-family: Papyrus;
-    /* font-color: #4E566C; */
-    /* font-family: Segoe Print; */
-    font-weight: 800 !important;
-    color: #ffffff !important;
-    margin-top: 150px !important;
-}
-
-@media (min-width:750px) {
-    .wedding-name {
-        margin-top: 250px;
-    }
-}
-
-.wedding-name::before {
-    content: none !important;
-}
-
-.hashtag-class {
-    color: #ff415c;
-    font-weight: 400;
-}
-
-.pic-gap {
-    margin-top: 2px !important;
 }
