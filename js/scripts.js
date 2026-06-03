@@ -96,10 +96,10 @@ $(document).ready(function () {
                     "padding": "35px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "35px",
+                    "top": "53px",
                 });
                 $('header .navicon').css({
-                    "top": "32px",
+                    "top": "49px",
                 });
             } else {
                 $('section.navigation').removeClass('fixed');
@@ -108,10 +108,10 @@ $(document).ready(function () {
                     "padding": "50px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "50px",
+                    "top": "68px",
                 });
                 $('header .navicon').css({
-                    "top": "46px",
+                    "top": "64px",
                 });
             }
         });
